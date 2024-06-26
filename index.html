@@ -3,46 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Drum-kit</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-    <input id="name" type="text" placeholder="Enter your name">
-    <p id="p">Let's check your Result</p>
-    <button type="submit" onclick="result()">CHECK</button>
+    <h1>DRUM-KIT</h1>
+    <div class="set">
+        <button class="w drum">W</button>
+        <button class="a drum">A</button>
+        <button class="s drum">S</button>
+        <button class="d drum">D</button>
+        <button class="j drum">J</button>
+        <button class="k drum">K</button>
+        <button class="l drum">L</button>
     </div>
-    <style>
-        div{
-            background-color: rgb(31, 189, 136);
-            height: 200px;
-            width: 300px;
-            text-align: center;
-            justify-content: center;
-            margin: 75px;
-            border-radius: 20%;
-        }
-        #name,#check{
-            margin-top: 40px;
-            text-align: center;
-            justify-content: center;
-        }
-        *{
-            font-family: cursive;
-            border-color: rgb(196, 233, 255);
-            border: 200px;
-        }
-    </style>
-    <script>
-        function result(){
-            var name = document.getElementById("name").value;
-            var res = Math.random();
-
-            if(res>=35){
-                p.innerHTML = name+" You are Pass";
-            }else{
-                p.innerHTML = name+" You are Fail";
-            }
-        }
-    </script>
+<script src="script.js"></script>
 </body>
 </html>
